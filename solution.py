@@ -2,7 +2,7 @@ import pandas as pd
 import numpy as np
 
 
-chat_id = 123456 # Ваш chat ID, не меняйте название переменной
+chat_id = 1234206085
 
 def solution(x: np.array, y: np.array) -> bool:
     # Измените код этой функции
