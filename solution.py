@@ -1,11 +1,12 @@
-import pandas as pd
 import numpy as np
-
+from scipy import stats
 
 chat_id = 1234206085
 
+
 def solution(x: np.array, y: np.array) -> bool:
-    # Измените код этой функции
-    # Это будет вашим решением
-    # Не меняйте название функции и её аргументы
-    return ... # Ваш ответ, True или False
+    alpha = 0.08
+    _, p_val = stats.anderson_ksamp([x, y])
+    if p_val < alpha:
+        return True
+    return False
